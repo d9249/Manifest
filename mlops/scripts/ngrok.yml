@@ -8,7 +8,7 @@
 #   4. ngrok start --all --config ngrok.yml 실행
 
 version: "2"
-authtoken: YOUR_NGROK_AUTHTOKEN
+authtoken: 2mxu1wNf7jFiPTm5guWNfOP9cO6_7ZngL5ZpGg2ekEYBbKHQZ
 
 tunnels:
   clearml-web:

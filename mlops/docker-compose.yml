@@ -61,6 +61,9 @@ services:
       CLEARML__apiserver__pre_populate__enabled: "true"
       CLEARML__apiserver__pre_populate__zip_files: "/opt/clearml/db-pre-populate"
       CLEARML__apiserver__pre_populate__artifacts_path: "/mnt/fileserver"
+      # Agent 인증 - .env 파일의 키 사용
+      CLEARML__secure__credentials__services_agent__user_key: ${CLEARML_AGENT_ACCESS_KEY:-}
+      CLEARML__secure__credentials__services_agent__user_secret: ${CLEARML_AGENT_SECRET_KEY:-}
     ports:
       - "8008:8008"
     volumes:

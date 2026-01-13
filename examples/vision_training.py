@@ -21,6 +21,15 @@ from pathlib import Path
 # ClearML 임포트
 from clearml import Task, Logger, Dataset
 
+# 서버 인증 설정 (ngrok 사용 시)
+Task.set_credentials(
+    api_host="https://83f837d6923d.ngrok-free.app",
+    web_host="http://localhost:8080",
+    files_host="http://localhost:8081",
+    key="Kj7mNp2xQw9rTs5vYb3uLc8h",
+    secret="Xf4kMn7pQr2sTv5wYb8zCd3eGh6jKm9nPq2rSt5uVx8y"
+)
+
 # PyTorch 임포트
 import torch
 import torch.nn as nn
