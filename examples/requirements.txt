@@ -1,0 +1,20 @@
+# 🧩 Requirements for ClearML Examples
+
+# ClearML SDK
+clearml>=1.14.0
+clearml-agent>=1.6.0
+
+# PyTorch (Vision & NLP examples)
+torch>=2.0.0
+torchvision>=0.15.0
+
+# Scikit-learn (Regression example)
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Model serialization
+joblib>=1.3.0
+
+# HTTP requests (connection testing)
+requests>=2.31.0

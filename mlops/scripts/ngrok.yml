@@ -1,0 +1,27 @@
+# ngrok 설정 파일
+# ClearML Server의 3개 포트를 동시에 터널링
+#
+# 사용법:
+#   1. ngrok 계정 생성 (https://ngrok.com)
+#   2. authtoken 발급
+#   3. 아래 YOUR_NGROK_AUTHTOKEN 부분에 입력
+#   4. ngrok start --all --config ngrok.yml 실행
+
+version: "2"
+authtoken: YOUR_NGROK_AUTHTOKEN
+
+tunnels:
+  clearml-web:
+    proto: http
+    addr: 8080
+    inspect: false
+
+  clearml-api:
+    proto: http
+    addr: 8008
+    inspect: false
+
+  clearml-files:
+    proto: http
+    addr: 8081
+    inspect: false
