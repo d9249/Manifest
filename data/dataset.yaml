@@ -1,0 +1,5 @@
+train: /content/drive/MyDrive/MLOps/0.Origin_100x/images/train
+val: /content/drive/MyDrive/MLOps/0.Origin_100x/images/val
+test: /content/drive/MyDrive/MLOps/0.Origin_100x/images/test
+nc: 14
+names: ['고임목','급유차','브릿지','안전콘','일반차량','작업자','카고로더','카고컨베이어','컨테이너','케이터링트럭','터그카','토잉카','팔레트 돌리','항공기']
