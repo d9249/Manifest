@@ -11,7 +11,7 @@ Features:
 사용법:
 1. 로컬 실행: python vision_training.py
 2. 원격 대기열 추가: 
-   clearml-task --project Manifest-Vision --name mnist-training --script vision_training.py --queue vision
+   clearml-task --project Manifest-Vision --name mnist-training --script examples/vision_training.py --queue vision
 """
 
 import os
